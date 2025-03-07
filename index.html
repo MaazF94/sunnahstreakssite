@@ -1,153 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunnah Streaks - Your Sunnah Habit Tracker</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Add basic styles for layout */
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunnah Streaks - Your Sunnah Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Basic styles */
+      body {
+        font-family: "Helvetica Neue", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #333;
+      }
 
-    header {
-      background-color: #ff9256;
-      padding: 2rem;
-      text-align: center;
-      color: white;
-    }
+      header {
+        background-color: #ff9256;
+        padding: 0;
+        text-align: center;
+        color: white;
+        position: relative;
+        height: 700px;
+        overflow: hidden;
+        margin-bottom: 0;
+      }
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+      .hero-image {
+        /* width: 100%; */
+        /* height: 100%; */
+        /* object-fit: cover; */
+        /* position: absolute; */
+        /* top: 0; */
+        /* left: 0; */
+      }
 
-    header p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
+      .section {
+        padding: 2rem 2rem; /* Reduced top padding */
+        text-align: center;
+      }
 
-    .cta-button {
-      padding: 1rem 2rem;
-      background-color: #ff5c02;
-      color: white;
-      font-size: 1.2rem;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      text-decoration: none;
-    }
+      .section h2 {
+        font-size: 2.5rem;
+        color: #ff5c02;
+        margin-top: 0; /* Remove extra margin */
+        margin-bottom: 1rem; /* Adjust spacing */
+      }
 
-    .cta-button:hover {
-      background-color: #c74700;
-    }
+      .section p {
+        font-size: 1.2rem;
+        /* margin-bottom: 2rem; */
+        color: #666;
+      }
 
-    .section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
+      .feature-container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+      }
 
-    .section h2 {
-      font-size: 2.5rem;
-      color: #ff5c02;
-      margin-bottom: 1rem;
-    }
+      .feature {
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
 
-    .section p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #666;
-    }
+      .feature img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
 
-    .feature-container {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
+      footer {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 2rem;
+        color: #666;
+      }
 
-    .feature {
-      max-width: 300px;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+      footer p {
+        font-size: 1rem;
+      }
 
-    .feature img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
+      .social-icons {
+        margin-top: 1rem;
+      }
 
-    footer {
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 2rem;
-      color: #666;
-    }
+      .social-icons a {
+        text-decoration: none;
+        margin: 0 10px;
+      }
 
-    footer p {
-      font-size: 1rem;
-    }
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="hero-image"
+        src="./assets/new-banner.png"
+        alt="Sunnah Streaks Banner"
+      />
+    </header>
 
-    .social-icons {
-      margin-top: 1rem;
-    }
-
-    .social-icons a {
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Sunnah Streaks</h1>
-    <p>Your habit tracker for a life of sunnah. Join our community and stay on track with daily deeds!</p>
-    <a href="#" class="cta-button">Get Started</a>
-  </header>
-
-  <div class="section" id="features">
-    <h2>Features</h2>
-    <p>Track your progress with ease. Sunnah Streaks makes it fun and simple to stay consistent.</p>
-    <div class="feature-container">
-      <div class="feature">
-        <img src="path-to-image1.jpg" alt="Feature 1">
-        <h3>Track Sunnahs</h3>
-        <p>Keep track of daily, weekly, and seasonal sunnahs. Stay consistent and complete your habits.</p>
-      </div>
-      <div class="feature">
-        <img src="path-to-image2.jpg" alt="Feature 2">
-        <h3>Compete with Friends</h3>
-        <p>Challenge friends and compete in friendly competitions to complete sunnahs together.</p>
-      </div>
-      <div class="feature">
-        <img src="path-to-image3.jpg" alt="Feature 3">
-        <h3>Social Sharing</h3>
-        <p>Share your milestones and achievements with the community. Inspire others to join the journey!</p>
+    <div class="section" id="features">
+      <h2>Features</h2>
+      <p>
+        Track your progress with ease. Sunnah Streaks makes it fun and simple to
+        stay consistent.
+      </p>
+      <div class="feature-container">
+        <div class="feature">
+          <img src="./assets/IMG_0048-left.png" alt="Track Your Streaks" />
+          <h3>✅ Track Your Streaks</h3>
+          <p>
+            Build consistency and stay motivated. Track your daily sunnah
+            habits.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/IMG_0046-left.png" alt="Learn About the Sunnah" />
+          <h3>📖 Learn About the Sunnah</h3>
+          <p>
+            Knowledge that transforms actions. Understand the significance of
+            each sunnah.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="./assets/IMG_0047-left.png" alt="View Monthly Stats" />
+          <h3>📊 View Monthly Stats</h3>
+          <p>
+            See your progress over time. Track your growth and achievements.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="section" id="download">
-    <h2>Start Your Sunnah Journey Today</h2>
-    <p>Download Sunnah Streaks on your device and start building your daily habits.</p>
-    <a href="#" class="cta-button">Download Now</a>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Sunnah Streaks. All Rights Reserved.</p>
-    <div class="social-icons">
-      <a href="https://facebook.com" target="_blank">Facebook</a>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-    </div>
-  </footer>
-
-</body>
+    <footer>
+      <p>&copy; 2025 Sunnah Streaks. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://instagram.com/sunnahstreaks.app" target="_blank">
+          <img src="./assets/Instagram_Glyph_Gradient.png" alt="Instagram" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
